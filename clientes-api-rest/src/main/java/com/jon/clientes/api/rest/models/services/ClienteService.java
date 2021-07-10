@@ -7,5 +7,10 @@ import com.jon.clientes.api.rest.models.entity.Cliente;
 public interface ClienteService {
 	
 	List<Cliente> findAll();
+	
+	Cliente findById(Long id);
+	
+	Cliente save(Cliente cliente);
 
+	void delete(Long id);
 }
